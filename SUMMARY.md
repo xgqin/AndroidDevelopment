@@ -1,7 +1,7 @@
 # Table of contents
 
 * [简介](README.md)
-* [目录](summary.md)
+* [目录](SUMMARY.md)
 * [ch01](ch01/README.md)
   * [熟悉Android开发环境](ch01/ch01/README.md)
     * [Untitled](ch01/ch01/untitled.md)

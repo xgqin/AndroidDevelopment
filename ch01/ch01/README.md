@@ -9,12 +9,12 @@
 
 ## 实验要求
 
-* 掌握\*Android Studio\*中工程的创建方法；
+* 掌握*Android Studio*中工程的创建方法；
 * 掌握向~Android~工程添加~Activity~的方法；
 * 掌握~AndroidManifest.xml~文件的基本结构及配置；
-* 掌握样式\(~Style~\)基本用法；
+* 掌握样式~Style~基本用法；
 
-### 实验内容
+## 实验内容
 
 \subsubsection{步骤一，创建工程} 
 
