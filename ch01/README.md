@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 熟悉Android开发环境
 
 ## 实验目的
@@ -1026,4 +1027,7 @@ echo 'You got to trust me on this, I saved the world'
 {% endcode %}
 
 
+=======
+# 第一章 熟悉Android Studio开发环境
+>>>>>>> 1ae99d4fb3467368fd188f69093782fcc795a33b
 
