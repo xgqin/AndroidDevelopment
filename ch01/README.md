@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# 熟悉Android开发环境
+# 第一章 熟悉Android Studio开发环境
 
 ## 实验目的
 
@@ -8,16 +7,16 @@
 * 掌握~Activity~的创建及布局资源的基本使用；
 * 掌握~Activity~生命周期及其不同状态；
 
-## 实验要求
+### 实验要求
 
-* 掌握*Android Studio*中工程的创建方法；
+* 掌握_Android Studio_中工程的创建方法；
 * 掌握向~Android~工程添加~Activity~的方法；
 * 掌握~AndroidManifest.xml~文件的基本结构及配置；
 * 掌握样式~Style~基本用法；
 
-## 实验内容
+### 实验内容
 
-\subsubsection{步骤一，创建工程} 
+\subsubsection{步骤一，创建工程}
 
 启动~Android Studio~，创建名为~Code01~工程。%如图\ref{graph01}所示，
 
@@ -39,27 +38,27 @@
 
 \begin{enumerate}
 
-  \item \textbf{Name}，工程名。这里为~Code01~，一般使用有意义的单词或缩写。
+\item \textbf{Name}，工程名。这里为~Code01~，一般使用有意义的单词或缩写。
 
-  \item \textbf{Package name}，包名。为~App~的唯一标识，一般使用公司或个人域名反写。工程名会自动作为包名后缀。
+\item \textbf{Package name}，包名。为~App~的唯一标识，一般使用公司或个人域名反写。工程名会自动作为包名后缀。
 
-  \item \textbf{Save location}，保存路径。
+\item \textbf{Save location}，保存路径。
 
-  \item \textbf{Language}，开发语言。可以选择~Java~及~Kotlin~两种。
+\item \textbf{Language}，开发语言。可以选择~Java~及~Kotlin~两种。
 
-  \item \textbf{Minimum API level}，最低支持API版本。~App~运行所支持的最低支持API版本。
+\item \textbf{Minimum API level}，最低支持API版本。~App~运行所支持的最低支持API版本。
 
 \end{enumerate}
 
 \begin{figure}\[th\]
 
-  \centering
+\centering
 
-  \includegraphics\[width=0.8\textwidth\]{images/ch01/Code01\_configure\_project.png}
+\includegraphics\[width=0.8\textwidth\]{images/ch01/Code01\_configure\_project.png}
 
-  \caption{配置~Android~工程}
+\caption{配置~Android~工程}
 
- \label{graph02}
+\label{graph02}
 
 \end{figure}
 
@@ -69,9 +68,9 @@
 
 \begin{enumerate}
 
-  \item \textbf{java文件}，~Activity~类对应的java源码文件，默认名为~MainActivity.java~。
+\item \textbf{java文件}，~Activity~类对应的java源码文件，默认名为~MainActivity.java~。
 
-  \item \textbf{layout文件}，~Activity~对应的layout（布局）文件，名为~activity\\_main.xml~。
+\item \textbf{layout文件}，~Activity~对应的layout（布局）文件，名为~activity\\_main.xml~。
 
 \end{enumerate}
 
@@ -81,13 +80,13 @@
 
 %\begin{figure}\[bh\]
 
-%  \centering
+% \centering
 
-%  \caption{编译~Android~工程}
+% \caption{编译~Android~工程}
 
-%  \label{graph03}
+% \label{graph03}
 
-%  \includegraphics\[width=0.8\textwidth\]{images/ch01/Code01\_build\_project.png}
+% \includegraphics\[width=0.8\textwidth\]{images/ch01/Code01\_build\_project.png}
 
 %\end{figure}
 
@@ -95,25 +94,25 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 %\begin{figure}\[th\]
 
-%  \centering
+% \centering
 
-%  \caption{选择~APK~部署目标设备}
+% \caption{选择~APK~部署目标设备}
 
-%  \label{graph04}
+% \label{graph04}
 
-%  \includegraphics\[width=0.7\textwidth\]{images/ch01/Code01\_select\_deployment\_target.png}
+% \includegraphics\[width=0.7\textwidth\]{images/ch01/Code01\_select\_deployment\_target.png}
 
 %\end{figure}
 
 \begin{figure}\[th\]
 
-  \centering
+\centering
 
-  \includegraphics\[width=0.5\textwidth\]{images/ch01/Code01\_running\_screenshot.png}
+\includegraphics\[width=0.5\textwidth\]{images/ch01/Code01\_running\_screenshot.png}
 
-  \caption{~Code01~运行结果}
+\caption{~Code01~运行结果}
 
-  \label{graph:running\_screenshot01}
+\label{graph:running\_screenshot01}
 
 \end{figure}
 
@@ -129,9 +128,11 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 &lt;resources&gt;
 
-    &lt;string name="app\_name"&gt;Code01&lt;/string&gt;
+```text
+&lt;string name="app\_name"&gt;Code01&lt;/string&gt;
 
-    \`\textbf{&lt;string name="hello\\_text"&gt;Hello World!&lt;/string&gt;}\`
+\`\textbf{&lt;string name="hello\\_text"&gt;Hello World!&lt;/string&gt;}\`
+```
 
 &lt;/resources&gt;
 
@@ -143,13 +144,15 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 ...
 
-    &lt;TextView
+```text
+&lt;TextView
 
-        ...
+    ...
 
-        \`\textbf{android:text="@string/hello\\_text"}\`
+    \`\textbf{android:text="@string/hello\\_text"}\`
 
-        ... /&gt;
+    ... /&gt;
+```
 
 \end{lstlisting}
 
@@ -163,17 +166,19 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 ...
 
-    &lt;TextView
+```text
+&lt;TextView
 
-        ...
+    ...
 
-        android:text="@string/hello\_text"
+    android:text="@string/hello\_text"
 
-        \`\textbf{android:textSize="32sp"}\`
+    \`\textbf{android:textSize="32sp"}\`
 
-        \`\textbf{android:textColor="@color/colorAccent"}\`
+    \`\textbf{android:textColor="@color/colorAccent"}\`
 
-        ... /&gt;
+    ... /&gt;
+```
 
 \end{lstlisting}
 
@@ -181,13 +186,13 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 \begin{figure}\[h\]
 
-  \centering
+\centering
 
-  \includegraphics\[width=0.6\textwidth\]{images/ch01/Code01\_extract\_android\_style.png}
+\includegraphics\[width=0.6\textwidth\]{images/ch01/Code01\_extract\_android\_style.png}
 
-  \caption{~Extract Android Style~对话框}
+\caption{~Extract Android Style~对话框}
 
-  \label{graph:extract\_android\_style}
+\label{graph:extract\_android\_style}
 
 \end{figure}
 
@@ -197,31 +202,33 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 ...
 
-    &lt;TextView
+```text
+&lt;TextView
 
-        android:text="@string/hello\_text"
+    android:text="@string/hello\_text"
 
-        app:layout\_constraintBottom\_toBottomOf="parent"
+    app:layout\_constraintBottom\_toBottomOf="parent"
 
-        app:layout\_constraintLeft\_toLeftOf="parent"
+    app:layout\_constraintLeft\_toLeftOf="parent"
 
-        app:layout\_constraintRight\_toRightOf="parent"
+    app:layout\_constraintRight\_toRightOf="parent"
 
-        app:layout\_constraintTop\_toTopOf="parent"
+    app:layout\_constraintTop\_toTopOf="parent"
 
-        \`\textbf{style="@style/textStyle" }\`/&gt;
+    \`\textbf{style="@style/textStyle" }\`/&gt;
+```
 
-\end{lstlisting} 
+\end{lstlisting}
 
 \begin{figure}\[bh\]
 
-  \centering
+\centering
 
-  \includegraphics\[width=0.5\textwidth\]{images/ch01/Code01\_running\_screenshot2.png}
+\includegraphics\[width=0.5\textwidth\]{images/ch01/Code01\_running\_screenshot2.png}
 
-  \caption{~Code01~最终运行效果}
+\caption{~Code01~最终运行效果}
 
-  \label{graph:running\_screenshot2}
+\label{graph:running\_screenshot2}
 
 \end{figure}
 
@@ -231,11 +238,11 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 \begin{enumerate}
 
-  \item 使用~Android Studio~创建工程、编译、部署~APK~；
+\item 使用~Android Studio~创建工程、编译、部署~APK~；
 
-  \item 使用strings（字符串）、styles（样式）资源；
+\item 使用strings（字符串）、styles（样式）资源；
 
-  \item View控件的基本样式；
+\item View控件的基本样式；
 
 \end{enumerate}
 
@@ -247,31 +254,31 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 \begin{enumerate}
 
-  \item 掌握~Android Studio~集成开发环境的基本用法；
+\item 掌握~Android Studio~集成开发环境的基本用法；
 
-  \item 了解~Android~工程基本结构；
+\item 了解~Android~工程基本结构；
 
-  \item 了解~Activity~的创建及布局资源的基本使用；
+\item 了解~Activity~的创建及布局资源的基本使用；
 
-  \item 了解~Activity~生命周期及其不同状态；
+\item 了解~Activity~生命周期及其不同状态；
 
 \end{enumerate}
 
 \subsection{实验要求}
 
- \begin{enumerate}
+\begin{enumerate}
 
-   \item 了解~Layout Editor~的基本使用；
+\item 了解~Layout Editor~的基本使用；
 
-   \item 了解~Layout~文件的基本结构；
+\item 了解~Layout~文件的基本结构；
 
-   \item 掌握~TextEdit、Button~控件的基本用法；
+\item 掌握~TextEdit、Button~控件的基本用法；
 
-   \item 掌握~Button~控件单击事件处理方式；
+\item 掌握~Button~控件单击事件处理方式；
 
-   \item 掌握~Toast~的基本用法；
+\item 掌握~Toast~的基本用法；
 
- \end{enumerate}
+\end{enumerate}
 
 \subsection{实验内容}
 
@@ -289,25 +296,27 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 
-&lt;\`\textbf{LinearLayout}\` 
+&lt;\`\textbf{LinearLayout}\`
 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+```text
+xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:tools="http://schemas.android.com/tools"
 
-    android:layout\_width="match\_parent"
+android:layout\_width="match\_parent"
 
-    android:layout\_height="match\_parent"
+android:layout\_height="match\_parent"
 
-    \`\textbf{android:layout\\_margin="16dp"}\`
+\`\textbf{android:layout\\_margin="16dp"}\`
 
-    \`\textbf{android:orientation="vertical"}\`
+\`\textbf{android:orientation="vertical"}\`
 
-    ...&gt;
+...&gt;
+```
 
 &lt;\`\textbf{/LinearLayout}\`&gt;
 
-\end{lstlisting} 
+\end{lstlisting}
 
 \textbf{2.} 在~activity\\_main.xml~文件的~TextView~控件标签上方及下方加入两个~Button~控件标签，并设置~Button~相应属性，如代码\ref{lst:button\_style}所示。
 
@@ -315,17 +324,17 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 \begin{itemize}
 
-  \item \textbf{android:id}，通用属性，作为控件的唯一标识。
+\item \textbf{android:id}，通用属性，作为控件的唯一标识。
 
-  \item \textbf{android:text}，通用属性，控件的文本，在此处为按钮的文本。
+\item \textbf{android:text}，通用属性，控件的文本，在此处为按钮的文本。
 
-  \item \textbf{android:textColor}，通用属性，控件的文本颜色，在此处为~Button~的文本颜色。
+\item \textbf{android:textColor}，通用属性，控件的文本颜色，在此处为~Button~的文本颜色。
 
-  \item \textbf{android:background}，通用属性，控件的背景色。
+\item \textbf{android:background}，通用属性，控件的背景色。
 
-  \item \textbf{android:layout\\_width}，通用属性，控件的宽，可取值包括\`\`match\\_parent''，\`\`wrap\\_content''或指定的大小（以\textbf{dp}为单位，例如：\textbf{48dp}）。
+\item \textbf{android:layout\\_width}，通用属性，控件的宽，可取值包括\`\`match\\_parent''，\`\`wrap\\_content''或指定的大小（以\textbf{dp}为单位，例如：\textbf{48dp}）。
 
-  \item \textbf{android:layout\\_height} ，通用属性，同上。 
+\item \textbf{android:layout\\_height} ，通用属性，同上。
 
 \end{itemize}
 
@@ -333,55 +342,57 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 ...
 
-    &lt;Button
+```text
+&lt;Button
 
-        android:id="@+id/btnShowToast"
+    android:id="@+id/btnShowToast"
 
-        android:text="Show Toast"
+    android:text="Show Toast"
 
-        android:textColor="@android:color/white"
+    android:textColor="@android:color/white"
 
-        android:background="@color/colorPrimary"
+    android:background="@color/colorPrimary"
 
-        android:layout\_width="match\_parent"
+    android:layout\_width="match\_parent"
 
-        android:layout\_height="wrap\_content" /&gt;
+    android:layout\_height="wrap\_content" /&gt;
 
-    &lt;TextView
+&lt;TextView
 
-        ...
+    ...
 
-        /&gt;
+    /&gt;
 
-    &lt;Button
+&lt;Button
 
-        android:id="@+id/btnCount"
+    android:id="@+id/btnCount"
 
-        android:text="Count"
+    android:text="Count"
 
-        android:textColor="@android:color/white"
+    android:textColor="@android:color/white"
 
-        android:background="@color/colorPrimary"
+    android:background="@color/colorPrimary"
 
-        android:layout\_width="match\_parent"
+    android:layout\_width="match\_parent"
 
-        android:layout\_height="wrap\_content" /&gt;
+    android:layout\_height="wrap\_content" /&gt;
+```
 
 ...
 
-\end{lstlisting} 
+\end{lstlisting}
 
 \textbf{3.} 设置~TextView~控件标签属性。如果此时通过~Layout Editor~（布局编辑器）查看~activity\\_main.xml~，则如图\ref{graph:layout\_preview}所示。
 
 \begin{figure}\[h\]
 
-  \centering
+\centering
 
-  \includegraphics\[width=0.9\textwidth\]{images/ch01/Code02\_layout\_editor\_preview.png}
+\includegraphics\[width=0.9\textwidth\]{images/ch01/Code02\_layout\_editor\_preview.png}
 
-  \caption{通过~Layout Editor~预览布局}
+\caption{通过~Layout Editor~预览布局}
 
-  \label{graph:layout\_preview}
+\label{graph:layout\_preview}
 
 \end{figure}
 
@@ -395,31 +406,33 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 ...
 
-    &lt;Button
+```text
+&lt;Button
 
-        ... /&gt;
+    ... /&gt;
 
-    &lt;TextView
+&lt;TextView
 
-        android:layout\_width="match\_parent"
+    android:layout\_width="match\_parent"
 
-        \`\textbf{android:layout\\_height="0dp"}\`
+    \`\textbf{android:layout\\_height="0dp"}\`
 
-        \`\textbf{android:layout\\_weight="1"}\`
+    \`\textbf{android:layout\\_weight="1"}\`
 
-        \`\textbf{android:gravity="center"}\`
+    \`\textbf{android:gravity="center"}\`
 
-        android:text="0"
+    android:text="0"
 
-        android:textSize="160sp"
+    android:textSize="160sp"
 
-        android:textColor="@color/colorAccent"
+    android:textColor="@color/colorAccent"
 
-        /&gt;
+    /&gt;
+```
 
 ...
 
-\end{lstlisting} 
+\end{lstlisting}
 
 \subsubsection{步骤三，编译、部署~APK~}
 
@@ -427,13 +440,13 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 \begin{figure}\[h\]
 
-  \centering
+\centering
 
-  \includegraphics\[width=0.5\textwidth\]{images/ch01/Code02\_running.png}
+\includegraphics\[width=0.5\textwidth\]{images/ch01/Code02\_running.png}
 
-  \caption{通过~AVD~虚拟机运行Code02}
+\caption{通过~AVD~虚拟机运行Code02}
 
-  \label{graph:code02\_running}
+\label{graph:code02\_running}
 
 \end{figure}
 
@@ -445,41 +458,43 @@ APK部署后运行的结果如图\ref{graph:running\_screenshot01}所示。
 
 \textbf{2.} 打开~MainActivity.java~源文件，在\lstinline{onCreate\(Bundle savedInstanceState\)}方法中加入如下代码：
 
-\begin{lstlisting}\[caption={添加~Toast~快显消息功能}, 
+\begin{lstlisting}\[caption={添加~Toast~快显消息功能},
 
- label={lst:toast}, escapeinside=\`\`\]
+label={lst:toast}, escapeinside=\`\`\]
 
 public class MainActivity extends AppCompatActivity {
 
-    ...
+```text
+...
 
-    @Override
+@Override
 
-    protected void onCreate\(Bundle savedInstanceState\) {
+protected void onCreate\(Bundle savedInstanceState\) {
 
-        super.onCreate\(savedInstanceState\);
+    super.onCreate\(savedInstanceState\);
 
-        setContentView\(R.layout.activity\_main\);
+    setContentView\(R.layout.activity\_main\);
 
-        \`\textbf{Button btnShowToast = findViewById\(R.id.btnShowToast\);}\`
+    \`\textbf{Button btnShowToast = findViewById\(R.id.btnShowToast\);}\`
 
-        btnShowToast.setOnClickListener\(new View.OnClickListener\(\){
+    btnShowToast.setOnClickListener\(new View.OnClickListener\(\){
 
-            @Override
+        @Override
 
-            public void onClick\(View view\) {
+        public void onClick\(View view\) {
 
-                \`\textbf{Toast.makeText\(MainActivity.this, "Hello World!",}\`
+            \`\textbf{Toast.makeText\(MainActivity.this, "Hello World!",}\`
 
-                     \`\textbf{Toast.LENGTH\\_SHORT\).show\(\);}\`
+                 \`\textbf{Toast.LENGTH\\_SHORT\).show\(\);}\`
 
-            }
+        }
 
-        }\);
+    }\);
 
-    }
+}
 
-    ...
+...
+```
 
 }
 
@@ -491,45 +506,47 @@ public class MainActivity extends AppCompatActivity {
 
 \begin{itemize}
 
-  \item 使用\lstinline{int count}记录计数次数；
+\item 使用\lstinline{int count}记录计数次数；
 
-  \item 设置\`\`Count''~Button~控件的\textbf{onClick}事件监听器，在其中更新\lstinline{count}值；
+\item 设置\`\`Count''~Button~控件的\textbf{onClick}事件监听器，在其中更新\lstinline{count}值；
 
-  \item 在\textbf{onClick}事件监听器中设置\lstinline{count}为~TextView~控件的文本值；
+\item 在\textbf{onClick}事件监听器中设置\lstinline{count}为~TextView~控件的文本值；
 
 \end{itemize}
 
-\begin{lstlisting}\[caption={实现计数功能}, 
+\begin{lstlisting}\[caption={实现计数功能},
 
- label={lst:count}, escapeinside=\`\`\]
+label={lst:count}, escapeinside=\`\`\]
 
 public class MainActivity extends AppCompatActivity {
 
-    \`\textbf{private int count = 0;}\`
+```text
+\`\textbf{private int count = 0;}\`
 
-    @Override
+@Override
 
-    protected void onCreate\(Bundle savedInstanceState\) {
+protected void onCreate\(Bundle savedInstanceState\) {
 
-       ...
+   ...
 
-        \`\textbf{final TextView tvCount = findViewById\(R.id.tvCount\);}\`
+    \`\textbf{final TextView tvCount = findViewById\(R.id.tvCount\);}\`
 
-        \`\textbf{Button btnCount = findViewById\(R.id.btnCount\);}\`
+    \`\textbf{Button btnCount = findViewById\(R.id.btnCount\);}\`
 
-        btnCount.setOnClickListener\(new View.OnClickListener\(\) {
+    btnCount.setOnClickListener\(new View.OnClickListener\(\) {
 
-            @Override
+        @Override
 
-            public void onClick\(View view\) {
+        public void onClick\(View view\) {
 
-                \`\textbf{tvCount.setText\(Integer.toString\(++count\)\);}\`
+            \`\textbf{tvCount.setText\(Integer.toString\(++count\)\);}\`
 
-            }
+        }
 
-        }\);
+    }\);
 
-    }
+}
+```
 
 }
 
@@ -539,13 +556,13 @@ public class MainActivity extends AppCompatActivity {
 
 \begin{figure}\[h\]
 
-  \centering
+\centering
 
-  \includegraphics\[width=0.5\textwidth\]{images/ch01/Code02\_running2.png}
+\includegraphics\[width=0.5\textwidth\]{images/ch01/Code02\_running2.png}
 
-  \caption{Code02最终运行效果}
+\caption{Code02最终运行效果}
 
-  \label{graph:code02\_running2}
+\label{graph:code02\_running2}
 
 \end{figure}
 
@@ -555,11 +572,11 @@ public class MainActivity extends AppCompatActivity {
 
 \begin{enumerate}
 
-  \item 使用~LinearLayout~（线性布局）进行布局管理；
+\item 使用~LinearLayout~（线性布局）进行布局管理；
 
-  \item 使用~Toast~显示快显消息；
+\item 使用~Toast~显示快显消息；
 
-  \item 使用~Button~控件的\textbf{onClick}事件监听器响应按钮单击事件；
+\item 使用~Button~控件的\textbf{onClick}事件监听器响应按钮单击事件；
 
 \end{enumerate}
 
@@ -571,13 +588,13 @@ public class MainActivity extends AppCompatActivity {
 
 \begin{enumerate}
 
-  \item 掌握~Android Studio~集成开发环境的基本用法；
+\item 掌握~Android Studio~集成开发环境的基本用法；
 
-  \item 了解~Android~工程基本结构；
+\item 了解~Android~工程基本结构；
 
-  \item 了解~Activity~的创建及布局资源的基本使用；
+\item 了解~Activity~的创建及布局资源的基本使用；
 
-  \item 了解~Activity~生命周期及其不同状态；
+\item 了解~Activity~生命周期及其不同状态；
 
 \end{enumerate}
 
@@ -585,13 +602,13 @@ public class MainActivity extends AppCompatActivity {
 
 \begin{enumerate}
 
-  \item 了解~Android Studio~中工程的创建方法；
+\item 了解~Android Studio~中工程的创建方法；
 
-  \item 了解如何向~Android~工程添加~Activity~；
+\item 了解如何向~Android~工程添加~Activity~；
 
-  \item 了解~AndroidManifest.xml~文件的基本结构及配置；
+\item 了解~AndroidManifest.xml~文件的基本结构及配置；
 
-   \item 了解样式\(~Style~\)基本用法；
+\item 了解样式\(~Style~\)基本用法；
 
 \end{enumerate}
 
@@ -607,63 +624,65 @@ public class MainActivity extends AppCompatActivity {
 
 \textbf{2.} 在原有~TextView~控件标签上方，添加2个新的~TextView~控件标签，用于显示新闻的标题及副标题，如代码\ref{lst:article\_title}所示。
 
-\begin{lstlisting}\[caption={新闻标题及副标题~TextView~样式}, 
+\begin{lstlisting}\[caption={新闻标题及副标题~TextView~样式},
 
- label={lst:article\_title}, escapeinside=\`\`\]
+label={lst:article\_title}, escapeinside=\`\`\]
 
 ...
 
-    &lt;TextView
+```text
+&lt;TextView
 
-        android:id="@+id/article\_title"
+    android:id="@+id/article\_title"
 
-        android:text="Article Title"
+    android:text="Article Title"
 
-        android:background="@color/colorPrimary"
+    android:background="@color/colorPrimary"
 
-        android:textColor="@android:color/white"
+    android:textColor="@android:color/white"
 
-        android:textSize="24sp"
+    android:textSize="24sp"
 
-        android:padding="10dp"
+    android:padding="10dp"
 
-        android:layout\_width="match\_parent"
+    android:layout\_width="match\_parent"
 
-        android:layout\_height="wrap\_content" /&gt;
+    android:layout\_height="wrap\_content" /&gt;
 
-    &lt;TextView
+&lt;TextView
 
-        android:id="@+id/article\_subheading"
+    android:id="@+id/article\_subheading"
 
-        android:text="Article Subheading"
+    android:text="Article Subheading"
 
-        android:textSize="16sp"
+    android:textSize="16sp"
 
-        android:textStyle="bold"
+    android:textStyle="bold"
 
-        android:textColor="@color/colorPrimary"
+    android:textColor="@color/colorPrimary"
 
-        android:layout\_width="match\_parent"
+    android:layout\_width="match\_parent"
 
-        android:layout\_height="wrap\_content"
+    android:layout\_height="wrap\_content"
 
-        \`\textbf{android:layout\\_below="@id/article\\_title"}\`
+    \`\textbf{android:layout\\_below="@id/article\\_title"}\`
 
-        android:padding="10dp"/&gt;
+    android:padding="10dp"/&gt;
 
-      &lt;TextView
+  &lt;TextView
 
-        android:id="@+id/article\_text"
+    android:id="@+id/article\_text"
 
-        android:text="Hello World!"
+    android:text="Hello World!"
 
-        android:layout\_width="match\_parent"
+    android:layout\_width="match\_parent"
 
-        android:layout\_height="wrap\_content"
+    android:layout\_height="wrap\_content"
 
-        \`\textbf{android:layout\\_below="@id/article\\_subheading"}\`
+    \`\textbf{android:layout\\_below="@id/article\\_subheading"}\`
 
-        /&gt;
+    /&gt;
+```
 
 ...
 
@@ -671,127 +690,133 @@ public class MainActivity extends AppCompatActivity {
 
 \textbf{3.} 将布局中的三个~TextView~的\textbf{android:text}属性的值抽取为字符串资源。将鼠标放在该属性值上，使用【\textbf{Alt+Enter}】快捷键，在弹出的快捷菜单中选择\textbf{Extract string resource}，将该属性值抽取为字符串资源。抽取出的字符串资源在~res/values/strings.xml~文件中可查看到，如代码\ref{lst:code03\_strings}所示。
 
-\begin{lstlisting}\[caption={strings.xml文件}, 
+\begin{lstlisting}\[caption={strings.xml文件},
 
- label={lst:code03\_strings}, escapeinside=\`\`\]
+label={lst:code03\_strings}, escapeinside=\`\`\]
 
 &lt;resources&gt;
 
-    &lt;string name="app\_name"&gt;Code03&lt;/string&gt;
+```text
+&lt;string name="app\_name"&gt;Code03&lt;/string&gt;
 
-    \`\textbf{&lt;string name="article\\_title"&gt;Article Title&lt;/string&gt;}\`
+\`\textbf{&lt;string name="article\\_title"&gt;Article Title&lt;/string&gt;}\`
 
-    \`\textbf{&lt;string name="article\\_subtitle"&gt;Article Subtitle&lt;/string&gt;}\`
+\`\textbf{&lt;string name="article\\_subtitle"&gt;Article Subtitle&lt;/string&gt;}\`
 
-    \`\textbf{&lt;string name="article\\_text"&gt;Article Text&lt;/string&gt;}\`
+\`\textbf{&lt;string name="article\\_text"&gt;Article Text&lt;/string&gt;}\`
+```
 
-&lt;/resources&gt;    
+&lt;/resources&gt;
 
 \end{lstlisting}
 
 \textbf{4.} 将布局中三个~TextView~的其他属性抽取为~style~。~style~抽取完成后~res/values/styles.xml~文件如代码\ref{lst:code03\_styles}所示。此时~activity\\_main.xml~布局文件如代码\ref{lst:code03\_activity\_layout}所示。
 
-\begin{lstlisting}\[caption={styles.xml文件}, 
+\begin{lstlisting}\[caption={styles.xml文件},
 
- label={lst:code03\_styles}, escapeinside=\`\`\]
+label={lst:code03\_styles}, escapeinside=\`\`\]
 
 ...
 
-    &lt;style name="ArticleTitle"&gt;
+```text
+&lt;style name="ArticleTitle"&gt;
 
-        &lt;item name="android:background"&gt;@color/colorPrimary&lt;/item&gt;
+    &lt;item name="android:background"&gt;@color/colorPrimary&lt;/item&gt;
 
-        &lt;item name="android:textColor"&gt;@android:color/white&lt;/item&gt;
+    &lt;item name="android:textColor"&gt;@android:color/white&lt;/item&gt;
 
-        &lt;item name="android:textSize"&gt;24sp&lt;/item&gt;
+    &lt;item name="android:textSize"&gt;24sp&lt;/item&gt;
 
-        &lt;item name="android:padding"&gt;@dimen/padding\_regular&lt;/item&gt;
+    &lt;item name="android:padding"&gt;@dimen/padding\_regular&lt;/item&gt;
 
-        &lt;item name="android:layout\_width"&gt;match\_parent&lt;/item&gt;
+    &lt;item name="android:layout\_width"&gt;match\_parent&lt;/item&gt;
 
-        &lt;item name="android:layout\_height"&gt;wrap\_content&lt;/item&gt;
+    &lt;item name="android:layout\_height"&gt;wrap\_content&lt;/item&gt;
 
-    &lt;/style&gt;
+&lt;/style&gt;
 
-    &lt;style name="ArticleSubtitle"&gt;
+&lt;style name="ArticleSubtitle"&gt;
 
-        &lt;item name="android:textSize"&gt;16sp&lt;/item&gt;
+    &lt;item name="android:textSize"&gt;16sp&lt;/item&gt;
 
-        &lt;item name="android:textStyle"&gt;bold&lt;/item&gt;
+    &lt;item name="android:textStyle"&gt;bold&lt;/item&gt;
 
-        &lt;item name="android:textColor"&gt;@color/colorPrimary&lt;/item&gt;
+    &lt;item name="android:textColor"&gt;@color/colorPrimary&lt;/item&gt;
 
-        &lt;item name="android:layout\_width"&gt;match\_parent&lt;/item&gt;
+    &lt;item name="android:layout\_width"&gt;match\_parent&lt;/item&gt;
 
-        &lt;item name="android:layout\_height"&gt;wrap\_content&lt;/item&gt;
+    &lt;item name="android:layout\_height"&gt;wrap\_content&lt;/item&gt;
 
-        &lt;item name="android:layout\_below"&gt;@id/article\_title&lt;/item&gt;
+    &lt;item name="android:layout\_below"&gt;@id/article\_title&lt;/item&gt;
 
-        &lt;item name="android:padding"&gt;@dimen/padding\_regular&lt;/item&gt;
+    &lt;item name="android:padding"&gt;@dimen/padding\_regular&lt;/item&gt;
 
-    &lt;/style&gt;
+&lt;/style&gt;
 
-    &lt;style name="ArticleText"&gt;
+&lt;style name="ArticleText"&gt;
 
-        &lt;item name="android:lineSpacingExtra"&gt;5sp&lt;/item&gt;
+    &lt;item name="android:lineSpacingExtra"&gt;5sp&lt;/item&gt;
 
-        &lt;item name="android:padding"&gt;@dimen/padding\_regular&lt;/item&gt;
+    &lt;item name="android:padding"&gt;@dimen/padding\_regular&lt;/item&gt;
 
-        &lt;item name="android:layout\_width"&gt;match\_parent&lt;/item&gt;
+    &lt;item name="android:layout\_width"&gt;match\_parent&lt;/item&gt;
 
-        &lt;item name="android:layout\_height"&gt;wrap\_content&lt;/item&gt;
+    &lt;item name="android:layout\_height"&gt;wrap\_content&lt;/item&gt;
 
-    &lt;/style&gt;
+&lt;/style&gt;
+```
 
 ...
 
 \end{lstlisting}
 
-\begin{lstlisting}\[caption={activity\\_main.xml文件}, 
+\begin{lstlisting}\[caption={activity\\_main.xml文件},
 
- label={lst:code03\_activity\_layout}, escapeinside=\`\`\]
+label={lst:code03\_activity\_layout}, escapeinside=\`\`\]
 
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 
 &lt;RelativeLayout
 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+```text
+xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:tools="http://schemas.android.com/tools"
 
-    android:layout\_width="match\_parent"
+android:layout\_width="match\_parent"
 
-    android:layout\_height="match\_parent"
+android:layout\_height="match\_parent"
 
-    tools:context=".MainActivity"&gt;
+tools:context=".MainActivity"&gt;
 
-    &lt;TextView
+&lt;TextView
 
-        android:id="@+id/article\_title"
+    android:id="@+id/article\_title"
 
-        android:text="@string/article\_title"
+    android:text="@string/article\_title"
 
-        \`\textbf{style="@style/ArticleTitle"}\` /&gt;
+    \`\textbf{style="@style/ArticleTitle"}\` /&gt;
 
-    &lt;TextView
+&lt;TextView
 
-        android:id="@+id/article\_subtitle"
+    android:id="@+id/article\_subtitle"
 
-        android:text="@string/article\_subtitle"
+    android:text="@string/article\_subtitle"
 
-        android:layout\_below="@id/article\_title"
+    android:layout\_below="@id/article\_title"
 
-        \`\textbf{style="@style/ArticleSubtitle"}\` /&gt;
+    \`\textbf{style="@style/ArticleSubtitle"}\` /&gt;
 
-    &lt;TextView
+&lt;TextView
 
-        android:id="@+id/article\_text"
+    android:id="@+id/article\_text"
 
-        android:text="@string/article\_text"
+    android:text="@string/article\_text"
 
-        android:layout\_below="@id/article\_subtitle"
+    android:layout\_below="@id/article\_subtitle"
 
-        \`\textbf{style="@style/ArticleText"}\` /&gt;
+    \`\textbf{style="@style/ArticleText"}\` /&gt;
+```
 
 &lt;/RelativeLayout&gt;
 
@@ -801,99 +826,101 @@ public class MainActivity extends AppCompatActivity {
 
 资源进行替换，在本项目中，~ArticleText~字符串资源是从网上摘取的新闻内容，你可以使用自己的内容进行代替，只要其内容足够长，使得~App~运行时，屏幕无法容纳该内容即可，替换后的~strings.xml~文件如代码\ref{lst:code03\_strings2}所示。
 
-\begin{lstlisting}\[caption={替换后的strings.xml文件}, 
+\begin{lstlisting}\[caption={替换后的strings.xml文件},
 
- label={lst:code03\_strings2}, escapeinside=\`\`\]
+label={lst:code03\_strings2}, escapeinside=\`\`\]
 
 &lt;resources&gt;
 
-    &lt;string name="app\_name"&gt;Code03&lt;/string&gt;
+```text
+&lt;string name="app\_name"&gt;Code03&lt;/string&gt;
 
-    &lt;string name="article\_title"&gt;Everything is made of something&lt;/string&gt;
+&lt;string name="article\_title"&gt;Everything is made of something&lt;/string&gt;
 
-    &lt;string name="article\_subtitle"&gt;By Ajay Dasgupta&lt;/string&gt;
+&lt;string name="article\_subtitle"&gt;By Ajay Dasgupta&lt;/string&gt;
 
-    &lt;string name="article\_text"&gt;
+&lt;string name="article\_text"&gt;
 
-        How do you make tea? Simple, put a teaspoon of tea into a boiling 
+    How do you make tea? Simple, put a teaspoon of tea into a boiling 
 
-        cup of water. Strain the water, pour some milk and sugar to taste
+    cup of water. Strain the water, pour some milk and sugar to taste
 
-        and the tea is ready! Interestingly, everything that we prepare has
+    and the tea is ready! Interestingly, everything that we prepare has
 
-        a recipe and is made up of simpler ingredients.
+    a recipe and is made up of simpler ingredients.
 
-        \n\nFor example, what is sugar made of? It is made of sugar
+    \n\nFor example, what is sugar made of? It is made of sugar
 
-        molecules, which in turn, are made up of atoms. The atom is the 
+    molecules, which in turn, are made up of atoms. The atom is the 
 
-        building block of all substances.
+    building block of all substances.
 
-        \n\nThe concept of the atom was first introduced by the Greek 
+    \n\nThe concept of the atom was first introduced by the Greek 
 
-        philosophers Democritus and Leucippus around 450-420 B.C. 
+    philosophers Democritus and Leucippus around 450-420 B.C. 
 
-        The word \'atom\' comes from a Greek word that means \'indivisible\'.
+    The word \'atom\' comes from a Greek word that means \'indivisible\'.
 
-         Infact, until recently, the atom was considered to be indivisible.
+     Infact, until recently, the atom was considered to be indivisible.
 
-        \n\n&lt;b&gt;&lt;i&gt;How small is an atom?&lt;/i&gt;&lt;/b&gt;
+    \n\n&lt;b&gt;&lt;i&gt;How small is an atom?&lt;/i&gt;&lt;/b&gt;
 
-        \n\nAtoms are very tiny, with diameters like one 
+    \n\nAtoms are very tiny, with diameters like one 
 
-        ten-thousand-millionth of a metre. So, approximately 50,000,000 
+    ten-thousand-millionth of a metre. So, approximately 50,000,000 
 
-        atoms of solid matter like iron,  lined up in a row, would measure 
+    atoms of solid matter like iron,  lined up in a row, would measure 
 
-        one centimetre \(0.4 inch\).
+    one centimetre \(0.4 inch\).
 
-         \n\nHowever, Carl Sagan in his book Cosmos says that if you
+     \n\nHowever, Carl Sagan in his book Cosmos says that if you
 
-         cut an apple-pie into equal halves and further divide each half
+     cut an apple-pie into equal halves and further divide each half
 
-         into smaller and smaller pieces, in about 90 cuts you will reach
+     into smaller and smaller pieces, in about 90 cuts you will reach
 
-         a single atom. But, there is no knife that can cut so fine. 
+     a single atom. But, there is no knife that can cut so fine. 
 
-         And the apple-pie would become invisible to the human eye in 
+     And the apple-pie would become invisible to the human eye in 
 
-         about 20 cuts.
+     about 20 cuts.
 
-        \n\n&lt;b&gt;&lt;i&gt;How do atoms create other substances?&lt;/i&gt;&lt;/b&gt;
+    \n\n&lt;b&gt;&lt;i&gt;How do atoms create other substances?&lt;/i&gt;&lt;/b&gt;
 
-        \n\nTwo or more atoms join together to form a molecule. 
+    \n\nTwo or more atoms join together to form a molecule. 
 
-        The molecule is the smallest part of a substance known as a
+    The molecule is the smallest part of a substance known as a
 
-        compound. For example, when two atoms of oxygen combine
+    compound. For example, when two atoms of oxygen combine
 
-        with one atom of carbon, it forms carbon dioxide gas.
+    with one atom of carbon, it forms carbon dioxide gas.
 
-        \n\nThese compounds group together to form bigger
+    \n\nThese compounds group together to form bigger
 
-        complex substances.
+    complex substances.
 
-        \n\n&lt;b&gt;&lt;i&gt;What are atoms made of?&lt;/i&gt;&lt;/b&gt;
+    \n\n&lt;b&gt;&lt;i&gt;What are atoms made of?&lt;/i&gt;&lt;/b&gt;
 
-        \n\nIs there a recipe for the atom? Yes! As with every other
+    \n\nIs there a recipe for the atom? Yes! As with every other
 
-        thing, even the atom is composed of smaller particles.
+    thing, even the atom is composed of smaller particles.
 
-        These particles are called neutrons,  protons and electrons. 
+    These particles are called neutrons,  protons and electrons. 
 
-        They are necessary ingredients to make an atom.
+    They are necessary ingredients to make an atom.
 
-        \n\nScientists have also found substances which make up
+    \n\nScientists have also found substances which make up
 
-        electrons and protons. So we have a recipe for electrons and
+    electrons and protons. So we have a recipe for electrons and
 
-        protons as well.
+    protons as well.
 
-        \n\nEverything around us is actually made out of something
+    \n\nEverything around us is actually made out of something
 
-        else, in an unending chain of ingredients and recipes.
+    else, in an unending chain of ingredients and recipes.
 
-    &lt;/string&gt;
+&lt;/string&gt;
+```
 
 &lt;/resources&gt;
 
@@ -905,13 +932,13 @@ public class MainActivity extends AppCompatActivity {
 
 \begin{figure}\[h\]
 
-  \centering
+\centering
 
-  \includegraphics\[width=0.5\textwidth\]{images/ch01/Code03\_running.png}
+\includegraphics\[width=0.5\textwidth\]{images/ch01/Code03\_running.png}
 
-  \caption{通过~AVD~虚拟机运行Code03}
+\caption{通过~AVD~虚拟机运行Code03}
 
-  \label{graph:code03\_running}
+\label{graph:code03\_running}
 
 \end{figure}
 
@@ -927,67 +954,69 @@ public class MainActivity extends AppCompatActivity {
 
 \textbf{4.} 重新编译、部署~APK~，在~AVD~虚拟机运行的效果，你可以上下滑动查看新闻的所有正文。
 
-\begin{lstlisting}\[caption={加入~ScrollView~布局控件}, 
+\begin{lstlisting}\[caption={加入~ScrollView~布局控件},
 
- label={lst:code03\_scroll\_view}, escapeinside=\`\`\]
+label={lst:code03\_scroll\_view}, escapeinside=\`\`\]
 
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 
 &lt;RelativeLayout
 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+```text
+xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:tools="http://schemas.android.com/tools"
+
+android:layout\_width="match\_parent"
+
+android:layout\_height="match\_parent"
+
+tools:context=".MainActivity"&gt;
+
+&lt;TextView
+
+    android:id="@+id/article\_title"
+
+    android:text="@string/article\_title"
+
+    style="@style/ArticleTitle" /&gt;
+
+\`\textbf{&lt;ScrollView}\`
+
+    android:layout\_below="@id/article\_title"
 
     android:layout\_width="match\_parent"
 
-    android:layout\_height="match\_parent"
+    android:layout\_height="match\_parent"&gt;
 
-    tools:context=".MainActivity"&gt;
+    \`\textbf{&lt;LinearLayout}\`
 
-    &lt;TextView
+        android:orientation="vertical"
 
-        android:id="@+id/article\_title"
+        android:layout\_width="wrap\_content"
 
-        android:text="@string/article\_title"
+        android:layout\_height="wrap\_content"&gt;
 
-        style="@style/ArticleTitle" /&gt;
+        &lt;TextView
 
-    \`\textbf{&lt;ScrollView}\`
+            android:id="@+id/article\_subtitle"
 
-        android:layout\_below="@id/article\_title"
+            android:text="@string/article\_subtitle"
 
-        android:layout\_width="match\_parent"
+            style="@style/ArticleSubtitle" /&gt;
 
-        android:layout\_height="match\_parent"&gt;
+        &lt;TextView
 
-        \`\textbf{&lt;LinearLayout}\`
+            android:id="@+id/article\_text"
 
-            android:orientation="vertical"
+            android:text="@string/article\_text"
 
-            android:layout\_width="wrap\_content"
+            style="@style/ArticleText" /&gt;
 
-            android:layout\_height="wrap\_content"&gt;
+   \`\textbf{&lt;/LinearLayout&gt;}\`
 
-            &lt;TextView
-
-                android:id="@+id/article\_subtitle"
-
-                android:text="@string/article\_subtitle"
-
-                style="@style/ArticleSubtitle" /&gt;
-
-            &lt;TextView
-
-                android:id="@+id/article\_text"
-
-                android:text="@string/article\_text"
-
-                style="@style/ArticleText" /&gt;
-
-       \`\textbf{&lt;/LinearLayout&gt;}\`
-
-    \`\textbf{&lt;/ScrollView&gt;}\`
+\`\textbf{&lt;/ScrollView&gt;}\`
+```
 
 &lt;/RelativeLayout&gt;
 
@@ -999,22 +1028,22 @@ public class MainActivity extends AppCompatActivity {
 
 \begin{enumerate}
 
-  \item 使用~RelativeLayout~（相对布局）进行布局管理；
+\item 使用~RelativeLayout~（相对布局）进行布局管理；
 
-  \item 使用~ScrollView~进行布局管理；
+\item 使用~ScrollView~进行布局管理；
 
-  \item 使用~TextView~进行长文本显示及格式设置；
+\item 使用~TextView~进行长文本显示及格式设置；
 
 \end{enumerate}
 
 Becoming a super hero is a fairly straight forward process:
 
-```
+```text
 $ give me super-powers
 ```
 
 {% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+Super-powers are granted randomly so please submit an issue if you're not happy with yours.
 {% endhint %}
 
 Once you're strong enough, save the world:
@@ -1026,8 +1055,5 @@ echo 'You got to trust me on this, I saved the world'
 ```
 {% endcode %}
 
-
-=======
-# 第一章 熟悉Android Studio开发环境
->>>>>>> 1ae99d4fb3467368fd188f69093782fcc795a33b
+## 
 
