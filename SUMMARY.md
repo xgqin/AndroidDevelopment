@@ -15,5 +15,7 @@
   * [第八个Android项目——登陆界面2](ch04/ch04-1.md)
   * [第九Android项目——新闻列表2](ch04/ch04-2.md)
 * [第四章 内容提供器与数据共享](ch05/README.md)
-  * [第十个Android项目——登陆界面2](ch05/ch05-1.md)
-
+  * [第十个Android项目——音乐播放器1](ch05/ch05-1.md)
+* [第五章 多媒体与服务](ch06/README.md)
+  * [第十一个Android项目——音乐播放器2](ch06/ch06-1.md)
+  * [第十二个Android项目——音乐播放器3](ch06/ch06-2.md)
