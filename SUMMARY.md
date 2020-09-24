@@ -7,5 +7,8 @@
   * [第二个Android项目——计数器](ch01/ch01-2.md)
   * [第三个Android项目——新闻阅读器](ch01/ch01-3.md)
 * [第二章 活动、组件及布局](ch02/README.md)
-  * [活动、组件及布局](ch02/ch02.md)
+  * [第四个Android项目——消息发送](ch02/ch02-1.md)
+  * [第五个Android项目——消息发送](ch02/ch02-2.md)
+  * [第六个Android项目——消息发送](ch02/ch02-3.md)
+  * [第七个Android项目——消息发送](ch02/ch02-4.md)
 
