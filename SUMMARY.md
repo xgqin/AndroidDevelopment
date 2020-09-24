@@ -21,3 +21,5 @@
   * [第十二个Android项目——音乐播放器3](ch06/ch06-2.md)
 * [第六章 绑定服务与自定义广播](ch07/README.md)
   * [第十三个Android项目——音乐播放器4](ch07/ch07-1.md)
+* [第七章 网络与多线程](ch08/README.md)
+  * [第十四个Android项目——新闻列表3](ch08/ch08-1.md)
