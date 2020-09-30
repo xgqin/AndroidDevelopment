@@ -26,7 +26,7 @@
 * [附录 扩展项目](appendix/README.md)
   * [第十五个项目——使用ViewHolder提升ListView显示性能](appendix/app01-1.md)
   * [第十六个项目——使用SwipeRefreshLayout实现下拉刷新](appendix/app01-2.md)
-  * [使用接口回调实现删除~ListView~列表中的~Item~数据](appendix/app01-3.md)
+  * [第十七个项目——使用接口回调实现删除ListView列表中的Item数据](appendix/app01-3.md)
   * [使用~Loader~实现异步数据加载操作](appendix/app01-4.md)
   * [使用~CursorAdapter~进行数据绑定及渲染](appendix/app01-5.md)
   * [使用~RecyclerView~显示列表数据](appendix/app01-6.md)
