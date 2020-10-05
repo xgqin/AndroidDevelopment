@@ -31,6 +31,6 @@
   * [第十九个项目——使用Fragment组织UI页面](appendix/app01-7.md)
   * [第二十个项目——使用CursorAdapter进行数据绑定及渲染](appendix/app01-5.md)
   * [第二十一个项目——使用Loader实现异步数据加载操作](appendix/app01-4.md)
-  * [使用~TimerTask~及~Handler~实现秒表计时器](appendix/app01-8.md)
-  * [使用~AsyncTask~进行网络异步请求](appendix/app01-9.md)
+  * [第二十二个项目——使用TimerTask及Handler实现秒表计时器](appendix/app01-8.md)
+  * [第二十三个项目——使用AsyncTask进行网络异步请求](appendix/app01-9.md)
 
